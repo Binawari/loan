@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Form</title>
+    <link rel="stylesheet" href="ustyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Let's get started.</h1>
+            <p>You may already be eligible for an offer. We need a little information to check. Submitting this form <strong>will not</strong> impact your credit.</p>
+        </div>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="input-group">
+                <label for="last-name">LAST NAME</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="input-group">
+                <label for="ssn">LAST 4 DIGITS OF SSN</label>
+                <input type="text" id="ssn" name="ssn" pattern="\d{4}" placeholder="XXXX" required>
+            </div>
+            <div class="input-group">
+                <label for="dob">DATE OF BIRTH</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="input-group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Sign up for email updates to receive special offers and promotions via email. <a href="#">Privacy Policy</a></label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <p class="footer">Important information about our <a href="#">Loan Amounts and Fees</a> and <a href="#">FAQs</a>. Visit our <a href="#">Terms & Conditions</a>.</p>
+    </div>
+</body>
+</html>
